@@ -1,5 +1,131 @@
-main{
-    img{
-        width: 100%;
+.carousel{
+    width: 100vw;
+    height: 340px;
+    overflow: hidden;
+
+    .slides{
+        @include flexContainer();
+        width: inherit;
+        height: inherit;
+
+        input{
+            display: none;
+        }
+
+        .slide{
+            width: inherit;
+            height: inherit;
+            transition: 1s;
+            img{
+                width: auto;
+                height: inherit;
+            }
+        }
+            //posicion de botones y estilo (auto y manual)
+        %position-buttons{
+            @include flexContainer(row, nowrap, center);
+            position: absolute;
+            top: 420px;
+            width: inherit;
+        }
+        %style-buttons{
+            background-color: #c6c6c6;
+            box-shadow: 0px 0px 1px #000000;
+            padding: 2.5px;
+            border-radius: 50%;
+            transition: 0.1s;
+
+            &:hover{
+                background-color: #fff;
+                box-shadow: 0 0 0 4px #fff;
+            }
+            &:not(:last-child){
+                margin-right: 16px;
+            }
+        }
+
+        #slides-auto{
+            @extend %position-buttons;
+            
+
+            div{
+                @extend %style-buttons;
+            }
+        }
+
+        #slides-manual{
+            @extend %position-buttons;
+            z-index: 2;
+
+            .boton-manual{
+                @extend %style-buttons;
+                cursor: pointer;
+            }
+        }
+
+            //Desplazamiento del carousel
+        #radio1:checked ~ .first{
+            margin-left: 0;
+        }
+        #radio2:checked ~ .first{
+            margin-left: -100%;
+        }
+        #radio3:checked ~ .first{
+            margin-left: -200%;
+        }
+        #radio4:checked ~ .first{
+            margin-left: -300%;
+        }
+            //Mantener seleccionado el boton
+        #radio1:checked ~ #slides-auto #boton-auto1{
+            background-color: #fff;
+            box-shadow: 0 0 0 3px #fff;
+        }
+        #radio2:checked ~ #slides-auto #boton-auto2{
+            background-color: #fff;
+            box-shadow: 0 0 0 3px #fff;
+        }
+        #radio3:checked ~ #slides-auto #boton-auto3{
+            background-color: #fff;
+            box-shadow: 0 0 0 3px #fff;
+        }
+        #radio4:checked ~ #slides-auto #boton-auto4{
+            background-color: #fff;
+            box-shadow: 0 0 0 3px #fff;
+        }
+
+        &:hover{
+            #carousel-buttons{
+                @include flexContainer(row, nowrap, space-between, center);
+                width: inherit;
+                height: inherit;
+                position: absolute;
+                
+                button{
+                    @include flexContainer(row,nowrap,center,center);
+                    height: 25%;
+                    width: 43px;
+                    color: #3483fa;
+                    border: none;
+                    cursor: pointer;
+                    i{
+                        font-size: 27px;
+                        margin-top: 30%;
+                    }
+
+                    &:hover{
+                        box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.3);
+                    }
+                }
+    
+                #carousel-buttons-before{
+                    border-radius: 0 5px 5px 0;
+                }
+    
+                #carousel-buttons-after{
+                    border-radius: 5px 0 0 5px;
+                }
+            }
+        }
     }
 }

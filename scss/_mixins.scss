@@ -1,3 +1,4 @@
+    // Flexbox padre
 @mixin flexContainer (
     $flex-direction: row, 
     $flex-wrap: nowrap, 
@@ -9,13 +10,12 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
-
-
+    // Flexbox hijo
 @mixin flexItems ($flex-grow: 0, $flex-shrink: 1, $flex-basis: auto) {
     flex: $flex-grow $flex-shrink $flex-basis;
 }
 
-
+    // Icono flecha abajo (Navbar)
 @mixin iconArrowDown{
     border-style: solid;
     border-width: 0 1.5px 1.5px 0;

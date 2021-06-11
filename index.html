@@ -72,11 +72,53 @@
     </header>
 
 
-
-
-
+    
     <main>
-        <img src="imagenes/Carousel/carousel4.webp" alt="">
+        <div class="carousel">
+            <div class="slides">
+
+                <input type="radio" name="radio-boton" id="radio1">
+                <input type="radio" name="radio-boton" id="radio2">
+                <input type="radio" name="radio-boton" id="radio3">
+                <input type="radio" name="radio-boton" id="radio4">
+                
+
+                <div class="slide first"><img src="Imagenes/carousel/carousel1.webp" alt="Ofertas dia del padre"></div>
+                <div class="slide"><img src="Imagenes/carousel/carousel2.webp" alt="Ofertas futbol"></div>
+                <div class="slide"><img src="Imagenes/carousel/carousel3.webp" alt="Ofertas hogar"></div>
+                <div class="slide"><img src="Imagenes/carousel/carousel4.webp" alt="Mercado credito"></div>
+
+
+                <div id="slides-auto">
+                    <div id="boton-auto1"></div>
+                    <div id="boton-auto2"></div>
+                    <div id="boton-auto3"></div>
+                    <div id="boton-auto4"></div>
+                </div>
+
+                <div id="slides-manual">
+                    <label for="radio1" class="boton-manual"></label>
+                    <label for="radio2" class="boton-manual"></label>
+                    <label for="radio3" class="boton-manual"></label>
+                    <label for="radio4" class="boton-manual"></label>
+                </div>
+
+                
+                <div id="carousel-buttons">
+                    <button id="carousel-buttons-before"><i class="fi-rr-angle-left"></i></button>
+                    <button id="carousel-buttons-after"><i class="fi-rr-angle-right"></i></button>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
     </main>
 
 
