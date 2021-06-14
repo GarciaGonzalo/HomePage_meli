@@ -26,3 +26,11 @@
     position: relative;
     transform: rotate(45deg);
 }
+
+@mixin hoverEffectLink($main-color: $secondary-color, $hover-color: $secondary-color-hover){
+    color: $main-color;
+
+    &:hover{
+        color: $hover-color;
+    }
+}

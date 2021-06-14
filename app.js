@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-        //--Variables--
+        //  --Variables--
     let buttonsCarousel = [
         {button: document.getElementById('radio1'), value: 1},
         {button: document.getElementById('radio2'), value: 2},
@@ -15,9 +15,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     let temporizador = setInterval(slideCarousel, 5000);
     
-    
-        //--Funciones--
-    function slideCarousel() {       
+
+        //  --Funciones--
+    const reiniciarTemporizador = () => {
+        clearTimeout(temporizador);
+        temporizador = setInterval(slideCarousel, 5000);
+    }
+
+    function slideCarousel() {
         for (const key in buttonsCarousel) {
             if(buttonsCarousel[key].button.checked == true){
                 counterCarousel = buttonsCarousel[key].value;
@@ -32,8 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     const botonesLaterales = () =>{
         buttonLeft_Carousel.addEventListener("click",() =>{
-            clearTimeout(temporizador);
-            temporizador = setInterval(slideCarousel, 5000);
+            reiniciarTemporizador();
 
             for (const key in buttonsCarousel) {
                 if(buttonsCarousel[0].button.checked == true){
@@ -48,8 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
         
         buttonRight_Carousel.addEventListener("click",() =>{
-            clearTimeout(temporizador);
-            temporizador = setInterval(slideCarousel, 5000);
+            reiniciarTemporizador();
 
             for (const key in buttonsCarousel) {
                 if(buttonsCarousel[3].button.checked == true){
@@ -66,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
-        //--Ejecucion--
+        //  --Ejecucion--
     buttonsCarousel[0].button.checked = true;
     botonesLaterales();
 });
