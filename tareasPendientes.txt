@@ -1,0 +1,12 @@
+Tareas pendientes:
+
+-Terminar maquetar footer (En proceso)
+
+-Ajustes:
+   --Header: Colocar los navbar correspondientes a los <li> desplegables
+   --Main: Ajustar slide horizontal (store)
+   --General: Convertir iconos a etiquetas SVG
+
+-Responsive
+
+-Intgrar React js 

@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-        //  --Variables--
+//----Variables----
+
+        // Carousel
     let buttonsCarousel = [
         {button: document.getElementById('radio1'), value: 1},
         {button: document.getElementById('radio2'), value: 2},
@@ -12,11 +14,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let buttonRight_Carousel = document.getElementById('carousel-buttons-after');
 
     let counterCarousel = 1;
-
     let temporizador = setInterval(slideCarousel, 5000);
     
 
-        //  --Funciones--
+
+        // Cards
+    let buttonRight_card = document.getElementsByClassName("button-right-slide");
+    let buttonLeft_card = document.getElementsByClassName("button-left-slide");
+    let firstCard = document.getElementsByClassName("firstCard");
+
+
+
+//----Funciones----
+
+
+        // Carousel -           Variables line 5
     const reiniciarTemporizador = () => {
         clearTimeout(temporizador);
         temporizador = setInterval(slideCarousel, 5000);
@@ -69,8 +81,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
-        //  --Ejecucion--
+        // Cards -              Variables line 21
+    const slideCards = () => {
+        let marginLeft = 0;
+
+        for (const key in buttonRight_card) {
+            if (buttonRight_card.hasOwnProperty(key)) {
+                buttonRight_card[key].addEventListener("click", () => {
+                    firstCard[key].style.marginLeft = `-${marginLeft + 100}%`;
+                })
+            }
+        }
+
+        for (const key in buttonLeft_card) {
+            if (buttonLeft_card.hasOwnProperty(key)) {
+                buttonLeft_card[key].addEventListener("click", () => {
+                    firstCard[key].style.marginLeft = `-${marginLeft}%`;
+                })
+            }
+        }
+    }
+     
+
+
+//----Ejecucion----
+
+        // Carousel -           Variables line 5, function line 30
     buttonsCarousel[0].button.checked = true;
     botonesLaterales();
+
+        // Cards -              Variables line 21, function line 83
+    slideCards();
+
+
 });
 
