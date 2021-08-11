@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
+.payment{
+    padding: 2%;
+    .container-payment{
+        @include flexContainer(row, nowrap, space-around);
+        max-width: 1200px;
+        height: 90px;
+        margin: 1% auto;
+        border-radius: 5px;
+        background-color: #fff;
+
+        .paymentSection{
+            @include flexContainer(row, nowrap, center, center);
+            width: 20%;
+            img{
+                margin-right: 6%;
+                cursor: pointer;
+            }
+            div{
+                font-size: 17px;
+                font-weight: 300;
+                a{
+                    font-size: 13px;
+                    font-weight: 400;
+                    @include hoverEffectLink();
+                }
+            }
+        }
+        
+        .viewMore{
+            @include flexContainer(row, nowrap, center, center);
+            border-left: 1px solid #e6e6e6;
+            width: 8%;
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+}

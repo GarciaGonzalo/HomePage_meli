@@ -206,6 +206,8 @@
                 @include flexContainer(row,nowrap,center,center);
                 position: absolute;
                 top: -250px;
+                height: 60px;
+                width: 60px;
                 border-radius: 50%;
                 padding: 20px;
                 border: none;
@@ -355,7 +357,6 @@
                         padding: 5%;
                         border-radius: 50%;
                         background-color: rgba(255, 255, 255, 0.7);
-                        // background-color: red;
                         position: absolute;
                         top: 10px;
                         right: 15px;
@@ -585,7 +586,7 @@
 
         div{
             @include flexContainer(column, nowrap, center, center);
-            height: 280px;
+            height: 340px;
             width: 171px;
             
             a{
@@ -594,15 +595,14 @@
                 height: 100%;
                 padding: 0px 15px;
                 outline: 1px solid #eae6e6;
-                
-                i{
-                    color: $secondary-color;
-                    font-size: 30px;
-                    margin-bottom: 8px;
+
+                svg{
+                    margin-top: -10px;
                 }
 
                 p{
                     color: $primary-black;
+                    padding-top: 15px;
                     font-size: 14px;
                     font-weight: 400;
                     text-align: center;
@@ -612,10 +612,14 @@
                 &:hover{
                     background-color: $secondary-color;
 
-                    i{
-                        color: #fff;
+                    path, circle{
+                        stroke: #fff;
                     }
-    
+                    
+                    .fill{
+                        fill: #fff;
+                    }
+
                     p{
                         color: #fff;
                         font-size: 14px;

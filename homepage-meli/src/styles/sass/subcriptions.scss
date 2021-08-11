@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'mixins';
+
+.card-subscriptions{
+    width: 32%;
+    position: relative;
+    cursor: pointer;
+
+    img{
+        width: 100%;
+        border-radius: 6px;
+    }
+            
+    .description-subscription{
+         @include flexContainer(row, nowrap, flex-start, center);
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        bottom: 0px;
+        padding: 4%;
+
+        .description-subscription-image{
+            width: 80px;
+            margin-right: 10px;
+        }
+
+        .description-subscription-text{
+            @include flexContainer(column, nowrap, space-evenly);
+            height: 80px;
+            width: 250px;
+            padding: 2%;
+
+            .description-subscription-daysFree{
+                color: #bfbfbf;
+                font-size: 11px;
+                font-weight: 500;
+            }
+
+            .description-subscription-title{
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .description-subscription-mark{
+                color: #fff;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+        }
+    }
+}

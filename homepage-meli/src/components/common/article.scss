@@ -1,0 +1,39 @@
+@import '../../styles/sass/_mixins';
+@import '../../styles/sass/_variables';
+
+
+    .row-container{
+        height: 450px;
+        max-width: 1220px;
+        margin: 0% auto;
+        margin-bottom: 2%;
+        padding: 10px 1%;
+        
+        .row-header{
+            @include flexContainer(row, nowrap, flex-start, center);
+            margin-bottom: 2%;
+            h2{
+                font-weight: 300;
+                color: $secondary-black;
+            }
+            a{
+                margin-top: 4px;
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                @include hoverEffectLink();
+            }
+        }
+        
+        .row-body{
+            @include flexContainer(column, nowrap, space-between);
+            background-color: red;
+    
+            &:hover{
+                .cards-button{
+                    display: block;
+                }
+            }
+        
+        }
+    }

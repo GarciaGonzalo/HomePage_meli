@@ -1,0 +1,36 @@
+    // Flexbox padre
+    @mixin flexContainer (
+        $flex-direction: row, 
+        $flex-wrap: nowrap, 
+        $justify-content: flex-start, 
+        $align-items: stretch)  
+    {
+        display: flex;
+        flex-flow: $flex-direction $flex-wrap;
+        justify-content: $justify-content;
+        align-items: $align-items;
+    }
+        // Flexbox hijo
+    @mixin flexItems ($flex-grow: 0, $flex-shrink: 1, $flex-basis: auto) {
+        flex: $flex-grow $flex-shrink $flex-basis;
+    }
+    
+        // Icono flecha abajo (Navbar)
+    @mixin iconArrowDown{
+        border-style: solid;
+        border-width: 0 1.5px 1.5px 0;
+        margin: 0 0 0 6px;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        position: relative;
+        transform: rotate(45deg);
+    }
+    
+    @mixin hoverEffectLink($main-color: $secondary-color, $hover-color: $secondary-color-hover){
+        color: $main-color;
+    
+        &:hover{
+            color: $hover-color;
+        }
+    }

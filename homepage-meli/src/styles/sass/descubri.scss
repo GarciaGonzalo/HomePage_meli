@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'mixins';
+
+    //Clase publicidad
+    .advertising{
+        @include flexContainer(row, nowrap, space-between, center);
+        width: 590px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        .description-advertising{
+            @include flexContainer(column, nowrap, space-between);
+            height: 65%;
+            width: 100%;
+            margin-left: 5%;
+            padding: 2% 0%;
+    
+            .description-advertising-text{
+                font-size: 12px;
+                font-weight: 500;
+                color: #4b4b4b;
+                letter-spacing: 4px;
+            }
+            .description-advertising-title{
+                @include flexContainer(column, nowrap);
+                font-size: 28px;
+                font-weight: 500;
+                color: #4b4b4b;
+                line-height: 30px;
+            }
+            .description-advertising-button{
+                width: 100px;
+                height: 35px;
+                padding: 9px 10px;
+                font-size: 13px;
+                font-weight: 500;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                background-color: $secondary-color;
+                cursor: pointer;
+                text-align: center;
+    
+                &:hover{
+                    transition: 0.3s;
+                    background-color: $secondary-color-hover;
+                }
+            }
+        }
+    
+        img{
+            max-height: 250px;
+            border-bottom-right-radius: inherit;
+            border-top-right-radius: inherit;
+        }
+    
+        &:hover{
+            box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
+    
+    .descubri, .tePuedeInteresar{
+        height: 380px;
+        
+        .row-body{
+            @include flexContainer(row, nowrap, space-between);
+    
+        }
+    }

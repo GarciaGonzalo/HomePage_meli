@@ -95,6 +95,7 @@ header {
                         content: '';
                         @include iconArrowDown;
                     }
+
                 }
             }
         }
@@ -103,7 +104,8 @@ header {
 
     #nav-menu-user{
         @include flexContainer(column, nowrap, space-between);        
-        img, i {
+        
+        img, svg {
             cursor: pointer;
             max-width: 340px;
         }
@@ -114,11 +116,8 @@ header {
             a{
                 font-size: 13px;
             }
-            i{
-                display: flex;
-            }
 
-            i, a{
+            svg, a{
                 @include hoverEffectLink($primary-black, #000);
             }
 

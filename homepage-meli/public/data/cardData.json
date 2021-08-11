@@ -1,0 +1,142 @@
+[
+    {
+        "imagen": "../imagenes/cards/card01.webp",
+        "title": "Smart Tv Noblex",
+        "lastPrice": {
+            "value": 37.890,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 35.999,
+            "discount": 5
+        },
+        "shippingFree": true,
+        "description": "Smart Tv Noblex Dk55x6500 Led 4k 55"
+    },
+    {
+        "imagen": "../imagenes/cards/card02.webp",
+        "title": "Auriculares In-ear",
+        "lastPrice": {
+            "value": 1.799,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 1.588,
+            "discount": 11
+        },
+        "shippingFree": true,
+        "description": "Auriculares In-ear Inalámbricos Qcy T1c Negro"
+    },
+    {
+        "imagen": "../imagenes/cards/card03.webp",
+        "title": "Sierra Circular Eléctrica Bosch",
+        "lastPrice": {
+            "value": 18.399,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 15.799,
+            "discount": 14
+        },
+        "shippingFree": true,
+        "description": "Sierra Circular Eléctrica Bosch Gks 150 184mm 1500w Azul 220v"
+    },
+    {
+        "imagen": "../imagenes/cards/card04.webp",
+        "title": "Bicicleta Mountain Bike",
+        "lastPrice": {
+            "value": 55.999,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 32.590,
+            "discount": 41
+        },
+        "shippingFree": true,
+        "description": "Bicicleta Mountain Bike Shifter Rodado 26 21v Frenos Disco"
+    },
+    {
+        "imagen": "../imagenes/cards/card05.webp",
+        "title": "Zapatillas Topper",
+        "lastPrice": {
+            "value": 5.000,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 3.999,
+            "discount": 21
+        },
+        "shippingFree": true,
+        "description": "Zapatillas Topper Ultralight Ii 0303 Dash"
+    },
+    {
+        "imagen": "../imagenes/cards/card06.webp",
+        "title": "Taladro Percutor",
+        "lastPrice": {
+            "value": 23.519,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 13.679,
+            "discount": 41
+        },
+        "shippingFree": true,
+        "description": "Taladro Percutor Dewalt Dcd776b-b3 20v"
+    },
+    {
+        "imagen": "../imagenes/cards/card07.webp",
+        "title": "Notebook Dell 3505",
+        "lastPrice": {
+            "value": 119.999,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 116.399,
+            "discount": 3
+        },
+        "shippingFree": true,
+        "description": "Notebook Dell 3505 Ryzen 7 3700u 8gb 512gb 15.6 Fhd W10"
+    },
+    {
+        "imagen": "../imagenes/cards/card08.webp",
+        "title": "Xiaomi Redmi Note 10",
+        "lastPrice": {
+            "value": 49.999,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 39.999,
+            "discount": 20
+        },
+        "shippingFree": true,
+        "description": "Xiaomi Redmi Note 10 5g Dual Sim 128 Gb Azul Nocturno 4 Gb Ram"
+    },
+    {
+        "imagen": "../imagenes/cards/card09.webp",
+        "title": "Paco Rabanne Invictus",
+        "lastPrice": {
+            "value": 15.070,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 9.266,
+            "discount": 38
+        },
+        "shippingFree": true,
+        "description": "Perfume Importado Hombre Paco Rabanne Invictus Edt 200ml"
+    },
+    {
+        "imagen": "../imagenes/cards/card10.webp",
+        "title": "Smart Tv Tcl",
+        "lastPrice": {
+            "value": 41.999,
+            "cent": "00"
+        },
+        "actualPrice": {
+            "value": 34.999,
+            "discount": 16
+        },
+        "shippingFree": true,
+        "description": "Smart Tv Tcl S65a Series L40s65a Led Full Hd 40  100v/240v"
+    }
+]

@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'mixins';
+
+.categoriasPopulares{
+    .row-body{
+        @include flexContainer();
+        background-color: #fff;
+
+        div{
+            @include flexContainer(column, nowrap, center, center);
+            height: 340px;
+            width: 171px;
+            
+            a{
+                @include flexContainer(column, nowrap, center, center);
+                width: 100%;
+                height: 100%;
+                padding: 0px 15px;
+                outline: 1px solid #eae6e6;
+
+                svg{
+                    margin-top: -10px;
+                }
+
+                p{
+                    color: $primary-black;
+                    padding-top: 15px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: center;
+                    height: 20px;
+                }
+
+                &:hover{
+                    background-color: $secondary-color;
+
+                    path, circle{
+                        stroke: #fff;
+                    }
+                    
+                    .fill{
+                        fill: #fff;
+                    }
+
+                    p{
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
