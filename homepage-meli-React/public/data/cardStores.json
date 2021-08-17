@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Whirlpool",
+        "imageBackground": "../imagenes/store/Whirlpool/store_background.jpg",
+        "imageLogo": "../imagenes/store/Whirlpool/store_logo.webp",
+        "storeItem1": "../imagenes/store/Whirlpool/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/Whirlpool/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/Whirlpool/store_items/store_item03.webp"
+    },
+    {
+        "title": "Samsung",
+        "imageBackground": "../imagenes/store/samsung/store_background.jpg",
+        "imageLogo": "../imagenes/store/samsung/store_logo.webp",
+        "storeItem1": "../imagenes/store/samsung/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/samsung/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/samsung/store_items/store_item03.webp"
+    },
+    {
+        "title": "Sportline",
+        "imageBackground": "../imagenes/store/sportline/store_background.jpg",
+        "imageLogo": "../imagenes/store/sportline/store_logo.webp",
+        "storeItem1": "../imagenes/store/sportline/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/sportline/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/sportline/store_items/store_item03.webp"
+    },
+    {
+        "title": "Simmons",
+        "imageBackground": "../imagenes/store/simmons/store_background.jpg",
+        "imageLogo": "../imagenes/store/simmons/store_logo.webp",
+        "storeItem1": "../imagenes/store/simmons/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/simmons/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/simmons/store_items/store_item03.webp"
+    },    {
+        "title": "Whirlpool",
+        "imageBackground": "../imagenes/store/Whirlpool/store_background.jpg",
+        "imageLogo": "../imagenes/store/Whirlpool/store_logo.webp",
+        "storeItem1": "../imagenes/store/Whirlpool/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/Whirlpool/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/Whirlpool/store_items/store_item03.webp"
+    },
+    {
+        "title": "Samsung",
+        "imageBackground": "../imagenes/store/samsung/store_background.jpg",
+        "imageLogo": "../imagenes/store/samsung/store_logo.webp",
+        "storeItem1": "../imagenes/store/samsung/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/samsung/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/samsung/store_items/store_item03.webp"
+    },
+    {
+        "title": "Sportline",
+        "imageBackground": "../imagenes/store/sportline/store_background.jpg",
+        "imageLogo": "../imagenes/store/sportline/store_logo.webp",
+        "storeItem1": "../imagenes/store/sportline/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/sportline/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/sportline/store_items/store_item03.webp"
+    },
+    {
+        "title": "Simmons",
+        "imageBackground": "../imagenes/store/simmons/store_background.jpg",
+        "imageLogo": "../imagenes/store/simmons/store_logo.webp",
+        "storeItem1": "../imagenes/store/simmons/store_items/store_item01.webp",
+        "storeItem2": "../imagenes/store/simmons/store_items/store_item02.webp",
+        "storeItem3": "../imagenes/store/simmons/store_items/store_item03.webp"
+    }
+]

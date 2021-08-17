@@ -1,0 +1,16 @@
+[
+    {
+        "title": "CALEFACCIÓN",
+        "description1": "EQUIPATE",
+        "description2": "PARA EL FRIO",
+        "textButton": "Ver más",
+        "imagen": "../imagenes/advertising/advertising1.webp"
+    },
+    {
+        "title": "DISFRUTÁ DEL FÚTBOL",
+        "description1": "OFERTAS",
+        "description2": "GANADORAS",
+        "textButton": "Descubrí",
+        "imagen": "../imagenes/advertising/advertising3.webp"
+    }
+]

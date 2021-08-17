@@ -1,0 +1,23 @@
+[
+    {
+        "imagen": "../Imagenes/subscription/subscription1.jpg",
+        "partner": "../imagenes/subscription/partner1.png",
+        "title": "paramount+",
+        "daysFree": "7 DÍAS GRATIS",
+        "offer": "Hasta 40% OFF"
+    },
+    {
+        "imagen": "../Imagenes/subscription/subscription2.png",
+        "partner": "../imagenes/subscription/partner2.png",
+        "title": "Disney+",
+        "daysFree": "",
+        "offer": "Hasta 4 meses de regalo"
+    },
+    {
+        "imagen": "../imagenes/subscription/subscription3.jpg",
+        "partner": "../imagenes/subscription/partner3.png",
+        "title": "HBO GO",
+        "daysFree": "",
+        "offer": "Hasta 45% OFF"
+    }
+]

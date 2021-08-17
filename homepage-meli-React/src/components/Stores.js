@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import Card from './Card';
+import Card from './CardStores';
 import Article from './common/Article';
 import CardsContainer from './CardsContainer';
 
-export default function Offers(){
+
+export default function Stores(){
     const [datos, setdatos] = useState(null);
     const cards = [];
 
@@ -15,7 +16,7 @@ export default function Offers(){
             setdatos(data);
         }
     
-        getDatos('/data/cardData.json');
+        getDatos('/data/cardStores.json');
     }, []);
 
 
@@ -25,14 +26,12 @@ export default function Offers(){
                 cards.push(
                 <Card
                 key= {index}
-                imagen={el.imagen}
                 title={el.title}
-                lastPriceValue={el.lastPrice.value}
-                lastPriceCent={el.lastPrice.cent}
-                actualPriceValue={el.actualPrice.value}
-                actualPriceDiscount={el.actualPrice.discount}
-                shippingFree={el.shippingFree}
-                description={el.description}
+                imageBackground={el.imageBackground}
+                imageLogo={el.imageLogo}
+                storeItem1={el.storeItem1}
+                storeItem2={el.storeItem2}
+                storeItem3={el.storeItem3}
                 />
                 );
             });
@@ -43,9 +42,10 @@ export default function Offers(){
 
 
     return(
-        <Article 
-            title="Ofertas"
-            titleLink="Ver todas"
+        <Article
+            clase= "cards row-container"
+            title= "Las mejores marcas te esperan"
+            titleLink= "Ver tiendas"
             component={
             
             <CardsContainer

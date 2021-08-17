@@ -1,0 +1,16 @@
+[
+    {
+        "title": "MERCADO PAGO POINT + QR",
+        "description1": "EMPEZÁ A COBRAR",
+        "description2": "CON TARJETAS",
+        "textButton": "Ver más",
+        "imagen": "../imagenes/advertising/advertising4.webp"
+    },
+    {
+        "title": "¡APROVECHÁ!",
+        "description1": "ABRIGOS",
+        "description2": "DE MODA",
+        "textButton": "Descubrí",
+        "imagen": "../imagenes/advertising/advertising5.webp"
+    }
+]

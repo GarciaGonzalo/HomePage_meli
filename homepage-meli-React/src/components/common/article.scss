@@ -3,12 +3,21 @@
 
 
     .row-container{
-        height: 450px;
+        height: 500px;
         max-width: 1220px;
         margin: 0% auto;
-        margin-bottom: 2%;
-        padding: 10px 1%;
-        
+        padding: 30px 1%;
+        // background-color: red;
+    }
+
+    .row-container-small{
+        height: 420px;
+        max-width: 1220px;
+        margin: 0% auto;
+        padding: 30px 1%;
+    }
+
+
         .row-header{
             @include flexContainer(row, nowrap, flex-start, center);
             margin-bottom: 2%;
@@ -27,7 +36,6 @@
         
         .row-body{
             @include flexContainer(column, nowrap, space-between);
-            background-color: red;
     
             &:hover{
                 .cards-button{
@@ -36,4 +44,4 @@
             }
         
         }
-    }
+    

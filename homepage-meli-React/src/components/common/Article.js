@@ -4,7 +4,7 @@ import './article.scss';
 
 export default function Article(props){
     return(
-    <article className="cards row-container">
+    <article className={props.clase}>
 
         <div className="row-header">
             <h2>{props.title}</h2>

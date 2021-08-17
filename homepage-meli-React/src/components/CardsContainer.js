@@ -4,9 +4,6 @@ import '../styles/sass/cardsContainer.scss';
 export default function CardsButton(props){
     return(
         <div>
-            <div className="slide-cards">
-                {props.card}
-            </div>
 
             {props.button &&
             <div className="cards-button">
@@ -25,6 +22,11 @@ export default function CardsButton(props){
             
             </div>
             }
+
+            <div className="slide-cards">
+                {props.card}
+            </div>
+
         </div>
     )
 }

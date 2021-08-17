@@ -2,11 +2,10 @@ import React from 'react';
 import Carrousel from '../Carrousel';
 import Payment from '../Payment';
 import Subcriptions from '../Subcriptions';
-import Descubri from '../Descubri';
-import Store from '../Store';
-import TePuedeInteresar from '../TePuedeInteresar';
 import CategoriasPopulares from '../CategoriasPopulares';
 import Offers from '../Offers';
+import Advertising from '../Advertising';
+import Stores from '../Stores';
 
 
 export default function Main(){
@@ -15,11 +14,16 @@ export default function Main(){
             <Carrousel />
             <Payment />
             <Offers />
-
             <Subcriptions />
-            <Descubri />
-            <Store />
-            <TePuedeInteresar />
+            <Advertising 
+                url='/data/cardAdvertising1.json'
+                title="Descubrí"/>
+            <Stores />
+            <Advertising 
+                url='/data/cardAdvertising2.json'
+                title="Te puede interesar"/>
+
+
             <CategoriasPopulares />
     </main>
 

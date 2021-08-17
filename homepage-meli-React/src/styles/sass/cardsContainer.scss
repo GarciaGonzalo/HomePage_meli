@@ -10,7 +10,7 @@
     %style-button-cards{
         @include flexContainer(row,nowrap,center,center);
         position: absolute;
-        top: -250px;
+        top: 150px;
         height: 60px;
         width: 60px;
         border-radius: 50%;
@@ -20,6 +20,7 @@
         color: #3483fa;
         cursor: pointer;
         font-size: 20px;
+        z-index: 1;
             
         i{
         @include flexContainer(row,nowrap,center,center);
@@ -53,8 +54,7 @@
 }
 
 .slide-cards{
-    @include flexContainer();
-    height: 390px;
+    @include flexContainer(row, nowrap, space-between);
     overflow-x: auto;
 
     &::-webkit-scrollbar{
