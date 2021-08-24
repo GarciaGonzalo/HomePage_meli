@@ -1,8 +1,7 @@
-Tareas pendientes:
--Intgrar React js (en proceso)
-
 -Ajustes:
    --Header: Colocar los navbar correspondientes a los <li> desplegables
-   --Main: Ajustar slide horizontal del .store (Al aplicar React)
+   --Main:
+	|-Ajustar problema animaciones pesadas (revisar fetch y useState)
+	|-Hacer funcionar los botones de los sliders y carrousel automatico
 
 -Responsive
